@@ -7,28 +7,28 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="calculator">
-    <input type="text" id="display" readonly />
+  <div class="calculator" role="application" aria-label="Basic Calculator">
+    <input type="text" id="display" readonly aria-label="Calculator display" />
     <div class="buttons">
-      <button onclick="clearDisplay()">C</button>
-      <button onclick="appendValue('/')">/</button>
-      <button onclick="appendValue('*')">*</button>
-      <button onclick="appendValue('-')">-</button>
+      <button onclick="clearDisplay()" aria-label="Clear">C</button>
+      <button onclick="appendValue('/')" aria-label="Divide">/</button>
+      <button onclick="appendValue('*')" aria-label="Multiply">*</button>
+      <button onclick="appendValue('-')" aria-label="Subtract">-</button>
 
-      <button onclick="appendValue('7')">7</button>
-      <button onclick="appendValue('8')">8</button>
-      <button onclick="appendValue('9')">9</button>
-      <button onclick="appendValue('+')">+</button>
+      <button onclick="appendValue('7')" aria-label="Seven">7</button>
+      <button onclick="appendValue('8')" aria-label="Eight">8</button>
+      <button onclick="appendValue('9')" aria-label="Nine">9</button>
+      <button onclick="appendValue('+')" aria-label="Add">+</button>
 
-      <button onclick="appendValue('4')">4</button>
-      <button onclick="appendValue('5')">5</button>
-      <button onclick="appendValue('6')">6</button>
-      <button onclick="calculateResult()">=</button>
+      <button onclick="appendValue('4')" aria-label="Four">4</button>
+      <button onclick="appendValue('5')" aria-label="Five">5</button>
+      <button onclick="appendValue('6')" aria-label="Six">6</button>
+      <button onclick="calculateResult()" aria-label="Equals">=</button>
 
-      <button onclick="appendValue('1')">1</button>
-      <button onclick="appendValue('2')">2</button>
-      <button onclick="appendValue('3')">3</button>
-      <button onclick="appendValue('0')">0</button>
+      <button onclick="appendValue('1')" aria-label="One">1</button>
+      <button onclick="appendValue('2')" aria-label="Two">2</button>
+      <button onclick="appendValue('3')" aria-label="Three">3</button>
+      <button onclick="appendValue('0')" aria-label="Zero">0</button>
     </div>
   </div>
 
